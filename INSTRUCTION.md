@@ -1,11 +1,11 @@
 # terraform-azurerm-resource_group_storage
 
-## Як використовувати цей модуль:
+## Використання
 
 ```hcl
-module "example" {
-  source               = "github.com/YOUR_GITHUB_USERNAME/terraform-azurerm-resource_group_storage//modules/resource_group_storage"
-  resource_group_name  = "my-rg"
+module "rg_storage" {
+  source               = "github.com/yourusername/terraform-azurerm-resource_group_storage//modules/resource_group_storage"
+  resource_group_name  = "my-resource-group"
   location             = "East US"
-  storage_account_name = "mystorageacct"
+  storage_account_name = "uniquestorageacct"
 }
